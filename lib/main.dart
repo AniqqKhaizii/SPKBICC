@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:spkb_icc/constants/style.dart';
 import 'package:spkb_icc/controllers/navigation_controller.dart';
 import 'package:spkb_icc/layout.dart';
 import 'package:spkb_icc/controllers/menu_controller.dart';
@@ -19,10 +21,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "SPKB ICC",
       theme: ThemeData(
-          scaffoldBackgroundColor: Colors.black12,
-          primaryColor: Colors.lightBlueAccent),
+          scaffoldBackgroundColor: dark,
+          primaryColor: Colors.lightBlueAccent,
+          fontFamily: GoogleFonts.poppins().fontFamily),
       home: SiteLayout(),
-      
     );
   }
 }

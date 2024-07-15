@@ -1,28 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:spkb_icc/constants/controllers.dart';
-import 'package:spkb_icc/constants/style.dart';
-import 'package:spkb_icc/helpers/responsiveness.dart';
-import 'package:spkb_icc/widgets/custom_text.dart';
+import 'package:spkb_icc/pages/utama/widgets/cards_large.dart';
+import 'package:spkb_icc/pages/utama/widgets/charts_large.dart';
 
 class UtamaPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Obx(() => Row(
-              children: [
-                Container(
-                  margin: EdgeInsets.only(
-                      top: ResponsiveWidget.isSmallScreen(context) ? 56 : 6),
-                  child: CustomText(
-                      text: menuController.activeItem.value,
-                      size: 24,
-                      color: dark,
-                      weight: FontWeight.normal),
-                )
-              ],
-            ))
+        Expanded(
+            child: ListView(
+          padding: EdgeInsets.only(left: 10, right: 10),
+          children: [UtamaCardsLarge(), ChartsLarge()],
+        )),
       ],
     );
   }

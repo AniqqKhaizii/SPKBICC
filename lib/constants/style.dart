@@ -2,5 +2,5 @@ import 'package:flutter/material.dart';
 
 Color light = Color(0XFFF7F8FC);
 Color lightGrey = Color(0XFFA4A6B3);
-Color dark = Color(0XFF363740);
+Color dark = Color(0XFF17202b);
 Color active = Color(0XFF3C19C0);
